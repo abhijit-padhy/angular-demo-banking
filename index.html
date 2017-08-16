@@ -4,76 +4,71 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <style type="text/css">
-        @font-face {
-    font-family: 'MyriadPro';
-    src: url('../vendor/Myriad-Pro_31655.ttf');
-}
-.mask{
-    height: 100%;
-    width: 100%;
-    background:#e8e8e8;
-    opacity: 0.5;
-    margin: 0px auto;
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-}   
-.apple-icon{
-    width: 29px;
-}
-.down-time-container{
-    position: absolute;
-    margin-left: 22%;
-    margin-top: 12%;
-}
-.down-time,.down-time-details{
-    text-align : center;    
-}
-.istTxt{
-    font-family: MyriadPro,Helvetica Neue;
-    font-size: 1.6em;
-    position: absolute;
-    top:3px;    
-    font-weight: 400;
-}
-.app-name{
-    font-family: MyriadPro,Helvetica Neue;
-    font-size: 2em;
-    margin-top: 1.2%;
-}
-.downtime{
-    font-family: MyriadPro,Helvetica Neue;
-    font-size: 1.2em;
-    margin-top: 2%;
-    font-weight: 400;
-}
-.line{
-    width: 113%;
-    height: 2px;
-    border: 1px;
-    background: linear-gradient(to bottom right, red, yellow);
-    margin: 3% 0 4% 0;
-    position: relative;
-    right: 5%
-}
-.appName-unavil{
-    font-family: MyriadPro,Helvetica Neue;
-    font-size: 1.2em;
-    font-weight: 400;
-}
-.time{
-    font-family: MyriadPro,Helvetica Neue;
-    font-size: 1.4em;
-    font-weight: 400;
-    margin: 2%;
-}
-.contact{
-    margin: 3%;
-    font-family: MyriadPro,Helvetica Neue;
-    font-size: 1em;
-    font-weight: 400;
-}
-
+		.mask{
+		    height: 100%;
+		    width: 100%;
+		    background:#e8e8e8;
+		    opacity: 0.5;
+		    margin: 0px auto;
+		    position: absolute;
+		    z-index: 1000;
+		    top: 0;
+		}   
+		.apple-icon{
+		    width: 29px;
+		}
+		.down-time-container{
+		    position: absolute;
+		    margin-left: 22%;
+		    margin-top: 12%;
+		}
+		.down-time,.down-time-details{
+		    text-align : center;    
+		}
+		.istTxt{
+		    font-family: MyriadPro,Helvetica Neue;
+		    font-size: 1.6em;
+		    position: absolute;
+		    top:3px;    
+		    font-weight: 400;
+		}
+		.app-name{
+		    font-family: MyriadPro,Helvetica Neue;
+		    font-size: 2em;
+		    margin-top: 1.2%;
+		}
+		.downtime{
+		    font-family: MyriadPro,Helvetica Neue;
+		    font-size: 1.2em;
+		    margin-top: 2%;
+		    font-weight: 400;
+		}
+		.line{
+		    width: 113%;
+		    height: 2px;
+		    border: 1px;
+		    background: linear-gradient(to bottom right, red, yellow);
+		    margin: 3% 0 4% 0;
+		    position: relative;
+		    right: 5%
+		}
+		.appName-unavil{
+		    font-family: MyriadPro,Helvetica Neue;
+		    font-size: 1.2em;
+		    font-weight: 400;
+		}
+		.time{
+		    font-family: MyriadPro,Helvetica Neue;
+		    font-size: 1.4em;
+		    font-weight: 400;
+		    margin: 2%;
+		}
+		.contact{
+		    margin: 3%;
+		    font-family: MyriadPro,Helvetica Neue;
+		    font-size: 1em;
+		    font-weight: 400;
+		}
     </style>
     <style type="text/css">
         body{
@@ -180,13 +175,6 @@
         <div ng-include="'./views/header.html'"></div>
         <div ng-include="'./views/sidenav.html'"></div>
         <div ng-view id="container" style="height: 100%;" ng-click="navCollapse()">
-            hello
-            <table>
-                <tr ng-repeat="x in data">
-                    <td ng-repeat="y in x">{{y}}</td>
-                </tr>
-            </table>
         </div>
-        {{2+3}}
     </body>
 </html>

@@ -23,7 +23,16 @@ app.config(function($routeProvider) {
 
 
 app.controller('indexCtrl',function($scope){
-	$scope.data = [[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]];
+	var toDate = new Date(2011, 11, 01, 13, 13);
+	var fromDate = new Date(2011, 12, 02, 14, 14);
+	$scope.labels = {
+			"label_appName":"Sidenavigation Sample",
+			"label_timeTo":toDate,
+			"label_timeFrm":fromDate,
+			"label_unavailMsg":"in GIT",
+			"label_timeZone":"UTC",
+			"label_email":"abc.xyz@mail.com",
+	};
 	$scope.navAccess = function(){
 		$("#navContainer").removeClass('navContainer');
 		$("#navContainer").removeClass('slideOut');
