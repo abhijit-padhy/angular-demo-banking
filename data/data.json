@@ -1,0 +1,16 @@
+{
+	"data" : [
+		{
+			"loanType" : "Personal Loan",
+			"url" : "personalLoan"
+		},
+		{
+			"loanType" : " Home Loan",
+			"url" : "homeLoan"
+		},
+		{
+			"loanType" : "Education Loan",
+			"url" : "eduLoan"
+		}
+	]
+}

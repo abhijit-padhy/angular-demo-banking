@@ -1,0 +1,7 @@
+<div ng-controller="homeLoanCtrl" style=" text-align: center; background: rgb(65,186,231); height: 100%;">
+    <span>My home</span>
+    <div id="loanConatiner" style=" margin-top: 10px;">
+        <span>Select loan type : </span>
+    	<div ng-repeat="loan in loans" style=" line-height: 30px;"><a href="#!{{loan.url}}">{{loan.loanType}}</a></div>
+    </div>
+</div>
