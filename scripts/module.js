@@ -21,6 +21,19 @@ app.config(function($routeProvider) {
 
 app.controller('indexCtrl',function($scope){
     $scope.message = "index message";
+    $scope.navAccess = function(){
+        $("#navContainer").removeClass('navContainer');
+        $("#navContainer").removeClass('slideOut');
+        $("#navContainer").addClass('slideIn');
+        $("#container").addClass("opac"); 
+    }
+    $scope.navCollapse = function(){
+        if($('#navContainer').hasClass('slideIn')){
+            $("#container").removeClass("opac");    
+            $("#navContainer").removeClass('slideIn');
+            $("#navContainer").addClass('slideOut');
+        }
+    }
 });
 
 app.controller('homeLoanCtrl',function($scope,$http){
