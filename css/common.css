@@ -5,3 +5,13 @@ body{
 #formTemp input{
 	line-height: 20px;
 }
+.greyback{
+    background-image:url('../image/greyback.png');
+     min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,9 +1,9 @@
-<div ng-controller="homeLoanCtrl" style=" text-align: center; height: 100%;">
+<div ng-controller="homeLoanCtrl" style=" text-align: center;overflow:auto;">
  	<span>My home</span>
-	<div style="background-color: #4d4d4d;height: 400px;line-height: 400px; text-align: center;">
+	<div class="greyback">
 		<span>Hurry up</span>
 	</div>
-    <div id="loanConatiner" style=" margin-top: 10px;">
+    <div id="loanConatiner" style="background-color:red;height:800px;">
         <span>Select loan type : </span>
     	<div ng-repeat="loan in loans" style=" line-height: 30px;">
     		<a href="#!{{loan.url}}" style="color: #666;">{{loan.loanType}}</a>
